@@ -20,5 +20,6 @@ jobs:
         echo test, and deploy your project.
         echo $PWD
         ls -la
-        stack config set system-ghc 
+        stack --version
+        stack config set system-ghc --global true
         stack build
