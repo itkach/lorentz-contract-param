@@ -8,7 +8,7 @@ on:
 jobs:  
   build:    
     runs-on: ubuntu-latest
-    container: docker.pkg.github.com/tqtezos/lorentz-contract-param/alpine-haskell-stack19:8.6.5
+    container: itkach/alpine-haskell-stack19:8.6.5
 
     steps:
     - uses: actions/checkout@v1
