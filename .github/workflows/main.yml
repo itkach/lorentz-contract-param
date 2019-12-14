@@ -22,4 +22,4 @@ jobs:
         ls -la
         stack --version
         stack config set system-ghc --global true
-        stack build --allow-different-user
+        stack build
