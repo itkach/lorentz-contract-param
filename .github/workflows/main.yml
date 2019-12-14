@@ -1,12 +1,12 @@
 name: CI
 
-on: 
+on:
   push:
     tags:
       - v*
 
-jobs:  
-  build:    
+jobs:
+  build:
     runs-on: ubuntu-latest
     container: itkach/alpine-haskell-stack19:8.6.5
 
@@ -21,5 +21,6 @@ jobs:
         echo $PWD
         ls -la
         stack --version
-        stack config set system-ghc --global true
-        stack build
+        stack --allow-different-user config set system-ghc --global true
+        echo "Starting build"
+        stack --allow-different-user build
