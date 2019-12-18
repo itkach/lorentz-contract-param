@@ -1,2 +1,2 @@
 FROM alpine
-COPY ./dist/*-linux64-static/* /usr/bin/
+COPY ./dist/*linux*static/* /usr/bin/
